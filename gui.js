@@ -317,8 +317,9 @@ define(function(require, module, exports) {
                         return;
                     }
                     else if (e.value == "manage") {
-                        commands.exec("togglepreferences", null, {
-                            pane: "project"
+                        commands.exec("openpreferences", null, {
+                            panel: "preferences.project",
+                            section: "Run Configuration"
                         });
                         return;
                     }
